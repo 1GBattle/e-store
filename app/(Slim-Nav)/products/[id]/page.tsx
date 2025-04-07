@@ -9,8 +9,6 @@ export default function ProductPage() {
     parseInt(id as string),
   );
 
-  console.log("product", product);
-
   return !isLoading && product ? (
     <div>
       <Image src={product.picUrl} alt={product.name} height={300} width={450} />
